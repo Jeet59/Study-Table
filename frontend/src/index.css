@@ -1,0 +1,337 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: #8e6548;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.navbar a {
+  color: white;
+  font-size: large;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-left: 25px;
+}
+
+.nav {
+  width: 100%;
+}
+
+.profile {
+  background-image: url("./assets/profile-bg.jpg");
+  background-size: 400px;
+  background-position: center top;
+  width: 100%;
+  height: 510px;
+  background-attachment: fixed;
+  position: relative;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.table {
+  background-image: url("./assets/table-bg.jpg");
+  background-size: 400px;
+  background-position: center top;
+  width: 100%;
+  background-attachment: fixed;
+  height: 510px;
+  position: relative;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.tableContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 1000px;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.profileContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 1000px;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.homeContent {
+  width: 100%;
+}
+
+/* Subjects.css */
+
+.subjects-container {
+  background-color: #f2f2f2; /* Light gray background */
+  padding: 20px;
+  text-align: center;
+}
+
+.header {
+  font-size: 36px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #8e6548; /* Brown color for header */
+  margin-bottom: 20px;
+}
+
+.subject-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.subject-link {
+  text-decoration: none;
+  margin: 10px;
+}
+
+.subject {
+  background-color: #f9cda9; /* Light orange background for subject boxes */
+  color: #8e6548; /* Brown color for text */
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: transform 0.2s;
+}
+
+.subject:hover {
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Cn.css */
+
+.subject-modules-container {
+  background-color: #f2f2f2; /* Light gray background */
+  padding: 20px;
+  text-align: center;
+}
+
+.header {
+  font-size: 36px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #8e6548; /* Brown color for header */
+  margin-bottom: 20px;
+}
+
+.module-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.module-link {
+  text-decoration: none;
+  margin: 10px;
+  width: 300px; /* Set the width of the module links as needed */
+}
+
+.module-box {
+  text-decoration: none;
+  background-color: #f9cda9; /* Light orange background for module boxes */
+  color: #f9f9f9; /* Brown color for text */
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  transition: transform 0.2s;
+  margin: 10px; /* Add margin to space out the boxes */
+}
+
+.module-link:hover .module-box {
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Module.css */
+
+.module-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2; /* Light gray background */
+}
+.module-xyz {
+  display: flex;
+}
+.pdf-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.youtube-container {
+  flex: 1;
+}
+
+/* PdfViewer.css */
+
+.pdf-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #8e6548;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+/* Add these styles to a CSS file (e.g., Login.css) */
+/* Add these styles to your CSS */
+.login-page {
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  align-items: center;
+  height: 100vh;
+  background-image: url("./assets/login-bg.jpeg"); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+}
+.register-page {
+  display: flex;
+  justify-content: flex-start; /* Align content to the right */
+  align-items: center;
+  height: 100vh;
+  background-image: url("./assets/login-bg.jpeg"); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  padding-left: 20px;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  margin-right: 50px;
+}
+
+.login-container h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  margin-top: 10px;
+}
+
+.banner {
+  text-align: center;
+  margin-right: 20%; /* Adjust this margin as needed */
+}
+
+.banner h1 {
+  color: #e9e0e0;
+  font-size: 36px; /* Adjust font size as needed */
+}
+
+.banner h2 {
+  color: #e9e0e0;
+  font-size: 36px; /* Adjust font size as needed */
+  padding-left: 250px;
+}
+
+.back-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
