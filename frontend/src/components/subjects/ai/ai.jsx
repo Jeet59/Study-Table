@@ -24,6 +24,11 @@ export default function Ai() {
           Planning and Learning
         </Link>
       </div>
+      <div>
+        <Link to="/home" className="back-button">
+          Back to Home
+        </Link>
+      </div>
     </div>
   );
 }

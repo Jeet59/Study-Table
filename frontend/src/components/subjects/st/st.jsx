@@ -24,6 +24,11 @@ export default function St() {
           Linear Least Squares
         </Link>
       </div>
+      <div>
+        <Link to="/home" className="back-button">
+          Back to Home
+        </Link>
+      </div>
     </div>
   );
 }

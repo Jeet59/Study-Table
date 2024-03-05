@@ -7,20 +7,26 @@ export default function Register() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const Navigate = useNavigate();
-  async function signup() {
+  async function signup(ev) {
+    ev.preventDefault();
     if (password === confirmPassword) {
-      //const response = await fetch("http://localhost:3001/register", {
-      //  method: "POST",
-      //  headers: {
-      //    "Content-Type": "application/json",
-      //  },
-      //  body: JSON.stringify({ username: username, password: password }),
-      //});
-      //if (response.ok) {
-      Navigate("/");
-    }
+      try {
+        const response = await fetch("http://localhost:3001/register", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          credentials: "include",
+          body: JSON.stringify({ username: username, password: password }),
+        });
+        if (response.ok) {
+          Navigate("/");
+        }
+      } catch (err) {
+        console.log("Error:", err);
+      }
+    } else console.log("Password dont match!");
   }
-
   return (
     <div className="register-page">
       <div className="login-container">

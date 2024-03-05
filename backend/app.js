@@ -11,7 +11,7 @@ const approuter = require("./routes/approutes.js");
 app.use(
   cors({
     credentials: true,
-    origin: "https://localhost:3000",
+    origin: "http://localhost:3000",
   })
 );
 app.use(express.json());
@@ -24,6 +24,5 @@ mongoose.connect(process.env.MONGO_URL, {
 app.listen(process.env.PORT, () => {
   console.log("Server is up");
 });
-app.use("/", approuter);
-app.use("/home", authcheck, approuter);
 app.use("/", authrouter);
+app.use("/home", authcheck, approuter);

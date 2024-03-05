@@ -24,6 +24,11 @@ export default function Wc() {
           Advanced React
         </Link>
       </div>
+      <div>
+        <Link to="/home" className="back-button">
+          Back to Home
+        </Link>
+      </div>
     </div>
   );
 }

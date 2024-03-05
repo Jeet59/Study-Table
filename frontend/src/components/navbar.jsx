@@ -8,4 +8,3 @@ export default function Navbar() {
     </div>
   );
 }
-//<Link to="/home/profile">Profile</Link>
